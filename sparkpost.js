@@ -1,5 +1,5 @@
 const SparkPost = require('sparkpost');
-const sparky = new SparkPost('YOUR-API-KEY');
+const sparky = new SparkPost('YOUR_API_KEY');
 
 sparky.transmissions.send({
   options: {
@@ -11,13 +11,13 @@ sparky.transmissions.send({
     html: `
     <html>
     <body>
-      <p>Testing SparkPost - the most awesomest email service! ;)</p>
+      <p>Testing SparkPost - the most awesomest email service! :)</p>
     </body>
     </html>
     `
   },
   recipients: [
-    { address: 'YOUREMAIL@gmail.com' }
+    { address: 'YOUR EMAIL ADDRESS' }
   ]
 })
 .then(data => {
