@@ -2,6 +2,10 @@
 
 Email delivery with SparkPost 🚀
 
+## Resources
+* [Node.js](https://nodejs.org/en/)
+* [SparkPost](https://www.sparkpost.com/)
+
 ## Prerequisites
 Before, you must have:
 
@@ -9,7 +13,7 @@ Before, you must have:
 * Create a valid SparkPost API Key
 * Edit the sparkpost.js file with your email and API KEY
 
-### Setup
+### Install
 
 ``` bash
 
