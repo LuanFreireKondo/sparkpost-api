@@ -1,5 +1,5 @@
-const SparkPost = require('sparkpost');
-const sparky = new SparkPost('YOUR_API_KEY');
+const SparkPost = require('sparkpost')
+const sparky = new SparkPost('YOUR_API_KEY')
 
 sparky.transmissions.send({
   options: {
@@ -7,22 +7,22 @@ sparky.transmissions.send({
   },
   content: {
     from: 'testing@sparkpostbox.com',
-    subject: 'SparkPost send test',
+    subject: 'SparkPost API - 🎉🎉🎉',
     html: `
     <html>
     <body>
-      <p>Testing SparkPost - the most awesomest email service! :)</p>
+      <p>Testing SparkPost - the most awesomest email service! 🎉🎉🎉</p>
     </body>
     </html>
     `
   },
   recipients: [
-    { address: 'YOUR EMAIL ADDRESS' }
+    { address: 'YOUR_EMAIL' }
   ]
 })
-.then(data => {
-  console.log('Woohoo! You just sent your first mailing!');
+.then(res => {
+  console.log('Woohoo! You just sent your first mailing!', res)
 })
 .catch(err => {
-  console.log('Whoops! Something went wrong');
+  console.log('Whoops! Something went wrong', err)
 });
